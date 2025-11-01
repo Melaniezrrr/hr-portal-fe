@@ -140,7 +140,7 @@ export const UserForm = (props: UserFormProps) => {
                     <Input id="password" type="password" value={password} onChange={handlePasswordChange} formNoValidate />
                 </Field>
                 <Field>
-                    <Button type="submit">Login</Button>
+                    <Button type="submit">Submit</Button>
                 </Field>
             </FieldGroup>
             <FieldGroup>

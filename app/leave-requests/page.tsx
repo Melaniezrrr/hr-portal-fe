@@ -97,9 +97,7 @@ export default function LeaveRequests() {
           <Field>
             <Button type="submit">Submit</Button>
           </Field>
-          <Field>
-            <Button type="submit">Login</Button>
-          </Field>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
         </FieldGroup>
       </form>
     </>

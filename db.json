@@ -28,20 +28,20 @@
             "role": "employee"
         }
     ],
-    "leaveRequests": [
+    "leave-requests": [
         {
             "id": 1,
             "userId": 1,
-            "startDate": "1761724800",
-            "endDate": "1761858000",
+            "startDate": "10/29/2025",
+            "endDate": "10/30/2025",
             "reason": "Vacation",
             "status": "Approved"
         },
         {
             "id": 2,
             "userId": 2,
-            "startDate": "1761724800",
-            "endDate": "1761858000",
+            "startDate": "10/31/2025",
+            "endDate": "11/01/2025",
             "reason": "Medical Leave",
             "status": "Pending"
         }
