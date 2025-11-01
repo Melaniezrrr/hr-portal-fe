@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,10 +28,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      >          
         <div className="flex items-center justify-between p-4 border-b border-zinc-200 dark:border-zinc-700 mb-8">
-          <div className="mr-4">LOGO - HR Portal</div>
+          <div className="mr-4">
+            <Image src="/hr-portal-logo1.png" alt="HR Portal Logo" width={75} height={75} />
+          </div>
           <ul className="flex gap-4">
+            <li><a href="/hr-dashboard">Dashboard</a></li>
             <li><a href="/profile">Profile</a></li>
             <li><a href="/leave-requests">Leave Requests</a></li>
             <li><a href="/">Logout</a></li>

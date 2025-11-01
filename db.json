@@ -6,7 +6,8 @@
             "lastName": "Johnson",
             "email": "alice.johnson@example.com",
             "password": "Password1234!",
-            "isActive": true
+            "isActive": true,
+            "role": "admin"
         },
         {
             "id": 2,
@@ -14,7 +15,17 @@
             "lastName": "Smith",
             "email": "bob.smith@example.com",
             "password": "Password1234!",
-            "isActive": false
+            "isActive": true,
+            "role": "employee"
+        },
+        {
+            "id": 3,
+            "firstName": "Charlie",
+            "lastName": "Brown",
+            "email": "charlie.brown@example.com",
+            "password": "Password1234!",
+            "isActive": false,
+            "role": "employee"
         }
     ],
     "leaveRequests": [

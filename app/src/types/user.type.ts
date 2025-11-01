@@ -1,3 +1,5 @@
+type UserRole = 'employee' | 'admin';
+
 export interface User {
     id: number;
     firstName: string;
@@ -5,4 +7,5 @@ export interface User {
     email: string;
     password: string;
     isActive: boolean;
+    role: UserRole;
 };
