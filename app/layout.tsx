@@ -28,19 +28,19 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >          
-        <div className="flex items-center justify-between p-4 border-b border-zinc-200 dark:border-zinc-700 mb-8">
-          <div className="mr-4">
+      >
+        <div className="container flex flex-col md:flex-row items-center justify-between mx-auto">
+          <div className="mb-4 md:mb-0 mr-0 md:mr-4">
             <Image src="/hr-portal-logo1.png" alt="HR Portal Logo" width={75} height={75} />
           </div>
-          <ul className="flex gap-4">
+          <ul className="flex flex-col md:flex-row gap-4 text-center md:text-left">
             <li><a href="/hr-dashboard">Dashboard</a></li>
             <li><a href="/profile">Profile</a></li>
             <li><a href="/leave-requests">Leave Requests</a></li>
             <li><a href="/">Logout</a></li>
           </ul>
         </div>
-        <div className="font-sansk">
+        <div className="font-sans container">
           <main className="p-4">
             {children}
           </main>
